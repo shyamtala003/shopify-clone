@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Ecommerce Platform in India | Custom Ecommers</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- flowbite cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+
+    <!-- tailwind costome config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'skin': '#fbf7ed',
+                        'black': '#212326',
+                        'green': '#008060',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <nav class="px-[5%] bg-skin">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class=" mr-3 h-10 sm:h-16" alt="Flowbite Logo">
+            </a>
+            <button data-collapse-toggle="navbar-multi-level" type="button"
+                class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 text-[black]"
+                aria-controls="navbar-multi-level" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                <ul class="flex flex-col p-4 mt-4  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-black md:p-0 text-[black] "
+                            aria-current="page">Pricing</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-[black]  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto  md:dark:hover:bg-transparent">Learn
+                            <svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 hidden"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383.2px, 66.4px, 0px);">
+                            <ul class="py-1 bg-white text-sm text-[black] " aria-labelledby="dropdownLargeButton">
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Help
+                                        Center</a>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Blog<svg
+                                            aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]"
+                                            aria-labelledby="doubleDropdownButton">
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block py-2 px-4 hover:border-l hover:border-[green]">Merchant Blog</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                class="block py-2 px-4 hover:border-l hover:border-[green]"">Retail Blog</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                class="block py-2 px-4 hover:border-l hover:border-[green]">Enterprise Blog</a>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Business Courses</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Guide</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">BShopify Community</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Free tools</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Products</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Bussiness encyclopedia</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Community Events</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Research</a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-black md:p-0 text-[black] 
+                            aria-current="page">Login</a>
+                    </li>
+
+
+                    <button class="bg-[#008060] text-white py-[5px] px-[20px]">Try for free</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- flowbit script -->
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+</body>
+
+</html>

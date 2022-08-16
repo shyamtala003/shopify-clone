@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Ecommerce Platform in India | Custom Ecommers</title>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- flowbite cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+
+    <!-- general styleshhet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- tailwind costome config -->
+    <script>
+        tailwind.config = {
+            theme: {
+
+                extend: {
+                    colors: {
+                        'skin': '#fbf7ed',
+                        'black': '#212326',
+                        'green': '#008060',
+                        'darkgreen': '#004C3F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-Great" id="top">
+
+
+    <nav class="px-[5%] bg-skin z-50 fixed w-full" style="margin-bottom: 150px;">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class=" mr-3 h-14  md:h-16 " alt="Flowbite Logo">
+            </a>
+            <div class="flex items-center">
+                <a href="#" class="lg:hidden font-medium">Log in</a>
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg lg:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 text-[black]"
+                    aria-controls="navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden w-full lg:block md:w-auto" id="navbar-multi-level">
+                <ul class="flex flex-col p-4 mt-4  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-[black]  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto  md:dark:hover:bg-transparent  text-base">Start
+                            <svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 hidden"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383.2px, 66.4px, 0px);">
+                            <ul class="py-1 bg-white text-sm text-[black] " aria-labelledby="dropdownLargeButton">
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium ">Start
+                                        your bussiness</a>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Branding<svg
+                                            aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Busssiness
+                                                    name generator</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Logo
+                                                    maker</a>
+                                            </li>
+                                            <li class="border-b p-2">
+                                                Look professional and help customers connect with your business
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown-online"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Online
+                                        presence<svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown-online"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+
+                                            <li class="border-b p-2">
+                                                Find a domain, explore stock images, and amplify your brand
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Domain
+                                                    Name</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Stock
+                                                    photography</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarSell"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-[black]  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto  md:dark:hover:bg-transparent  text-base">Sell
+                            <svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarSell"
+                            class="z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 hidden"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383.2px, 66.4px, 0px);">
+                            <ul class="py-1 bg-white text-sm text-[black] " aria-labelledby="dropdownLargeButton">
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium ">Start
+                                        your bussiness</a>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdownSell"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Branding<svg
+                                            aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdownSell"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Busssiness
+                                                    name generator</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Logo
+                                                    maker</a>
+                                            </li>
+                                            <li class="border-b p-2">
+                                                Look professional and help customers connect with your business
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown-online1"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Online
+                                        presence<svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown-online1"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+
+                                            <li class="border-b p-2">
+                                                Find a domain, explore stock images, and amplify your brand
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Domain
+                                                    Name</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Stock
+                                                    photography</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarMarket"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-[black]  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto  md:dark:hover:bg-transparent  text-base">Market
+                            <svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarMarket"
+                            class="z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 hidden"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383.2px, 66.4px, 0px);">
+                            <ul class="py-1 bg-white text-sm text-[black] " aria-labelledby="dropdownLargeButton">
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium ">Start
+                                        your bussiness</a>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown2"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Branding<svg
+                                            aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown2"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Busssiness
+                                                    name generator</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Logo
+                                                    maker</a>
+                                            </li>
+                                            <li class="border-b p-2">
+                                                Look professional and help customers connect with your business
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown-online3"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Online
+                                        presence<svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown-online3"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+
+                                            <li class="border-b p-2">
+                                                Find a domain, explore stock images, and amplify your brand
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Domain
+                                                    Name</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Stock
+                                                    photography</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarManage"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-[black]  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto  md:dark:hover:bg-transparent  text-base">Manage
+                            <svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarManage"
+                            class="z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 hidden"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383.2px, 66.4px, 0px);">
+                            <ul class="py-1 bg-white text-sm text-[black] " aria-labelledby="dropdownLargeButton">
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium ">Start
+                                        your bussiness</a>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown5"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Branding<svg
+                                            aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown5"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Busssiness
+                                                    name generator</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Logo
+                                                    maker</a>
+                                            </li>
+                                            <li class="border-b p-2">
+                                                Look professional and help customers connect with your business
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown-online6"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] font-medium">Online
+                                        presence<svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdown-online6"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+
+                                            <li class="border-b p-2">
+                                                Find a domain, explore stock images, and amplify your brand
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Domain
+                                                    Name</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block font-medium py-2 px-4 hover:border-l hover:border-[green]">Stock
+                                                    photography</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-black md:p-0 text-[black] font-medium"
+                            aria-current="page">Pricing</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarLearn"
+                            class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-[black]  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto  md:dark:hover:bg-transparent  text-base">Learn
+                            <svg class="ml-1 w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarLearn"
+                            class="z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 hidden"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom"
+                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(383.2px, 66.4px, 0px);">
+                            <ul class="py-1 bg-white text-sm text-[black] " aria-labelledby="dropdownLargeButton">
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Help
+                                        Center</a>
+                                </li>
+                                <li aria-labelledby="dropdownNavbarLink" class="border-b">
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdownBlog"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex justify-between items-center py-2 px-4 w-full hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Blog<svg
+                                            aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div id="doubleDropdownBlog"
+                                        class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(10.4px, 0px, 0px);"
+                                        data-popper-reference-hidden="" data-popper-escaped=""
+                                        data-popper-placement="right-start">
+                                        <ul class="py-1 text-sm text-[black]" aria-labelledby="doubleDropdownButton">
+                                            <li class="border-b">
+                                                <a href="#"
+                                                    class="block py-2 px-4 hover:border-l hover:border-[green]">Merchant
+                                                    Blog</a>
+                                            </li>
+                                            <li class="border-b">
+                                                <a href="#" class="block py-2 px-4 hover:border-l hover:border-[green]"">Retail Blog</a>
+                                            </li>
+                                            <li class=" border-b">
+                                                    <a href="#"
+                                                        class="block py-2 px-4 hover:border-l hover:border-[green]">Enterprise
+                                                        Blog</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Business
+                                        Courses</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Guide</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">BShopify
+                                        Community</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Free
+                                        tools</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Products</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Bussiness
+                                        encyclopedia</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Community
+                                        Events</a>
+                                </li>
+                                <li class="border-b">
+                                    <a href="#"
+                                        class="block py-2 px-4 bg-white hover:bg-gray-100hover:border hover:border-l-[2px] hover:border-[green] ">Research</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-black md:p-0 text-[black]  text-base"
+                            aria-current="page">Login</a>
+                    </li>
+
+
+                    <button class="bg-[#008060] text-white py-[8px] px-[20px] rounded-sm shadow-xl"
+                        style="white-space: nowrap;">Try for free</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------- hero section ---------------------------->
+
+    <section class="font-sans ">
+        <div class=" bg-skin grid gap-6 mx-auto lg:grid-cols-2 xl:grid-cols-5">
+            <div class="w-full pl-6 py-16 sm:px-12 md:px-16 xl:col-span-2 bg-skin mt-4">
+
+                <h1 class="text-4xl md:text-6xl  font-semibold text-[#004c3f]">The easiest way to sell online in India
+                </h1>
+                <p class="my-8">
+                    <span class="font-medium text-gray-500 ">Try one of the most powerful platforms on the market for
+                        free. No technical knowledge needed.
+                </p>
+                <form novalidate="" action=""
+                    class="self-stretch space-y-3ng-untouched ng-pristine ng-valid flex items-center justify-between flex-wrap md:flex-nowrap">
+                    <input type="email" name="" id="" placeholder="Enter your email address" class="w-full rounded">
+                    <button
+                        class="bg-[#008060] text-white py-[8px] px-[20px] rounded-sm shadow-xl mt-4 w-full md:w-auto md:ml-3 md:mt-0"
+                        style="white-space: nowrap; ">Try for free</button>
+                </form>
+                <p class="my-8">
+                    <span class="text-sm text-gray-800 ">Try Shopify free for 14 days, no credit card required. By
+                        entering your email, you agree to receive marketing emails from Shopify.
+                </p>
+            </div>
+            <img src="./images/hero_img.webp" alt="" id="hero_img"
+                class="object-cover w-full xl:col-span-3 dark:bg-gray-500" style=";">
+        </div>
+    </section>
+
+    <!-- ---------------------------business section--------------- -->
+    <section class="bg-darkgreen px-[5%] py-[96px]">
+        <div class="head flex items-center justify-between flex-wrap">
+            <div class="head-text pb-5">
+                <h1 class="text-white font-medium text-3xl md:text-4xl">Bring your business online</h1>
+                <P class="text-white mt-2">Create an ecommerce website backed by powerful tools that help you find
+                    customers,
+                    drive sales, and manage your day-to-day.</P>
+            </div>
+            <p class="text-white text-base font-medium flex items-center justify-between">Explore more example <ion-icon
+                    class="ml-1" name="arrow-forward-outline"></ion-icon>
+            </p>
+        </div>
+
+        <div class="grid gap-4  grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-11">
+
+            <div>
+                <img src="./images/1.webp" alt="">
+                <a class="text-white text-xl font-medium hover:border-b">Foor & Drinks</a>
+                <p class="mt-2 text-white capitalize font-medium">Blue Tokai</p>
+            </div>
+            <div>
+                <img src="./images/2.webp" alt="">
+                <a class="text-white text-xl font-medium hover:border-b">Jewelry</a>
+                <p class="mt-2 text-white capitalize font-medium">Quirksmith</p>
+            </div>
+            <div>
+                <img src="./images/3.webp" alt="">
+                <a class="text-white text-xl font-medium hover:border-b">Electronics</a>
+                <p class="mt-2 text-white capitalize font-medium">Crossbeats</p>
+            </div>
+            <div>
+                <img src="./images/4.webp" alt="">
+                <a class="text-white text-xl font-medium hover:border-b">beauty</a>
+                <p class="mt-2 text-white capitalize font-medium">Mcaffeine</p>
+            </div>
+            <div class="hidden lg:inline">
+                <img src="./images/5.webp" alt="">
+                <a class="text-white text-xl font-medium hover:border-b">Fashion</a>
+                <p class="mt-2 text-white capitalize font-medium">Bunaai</p>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="bottom_card_container mt-[120px]">
+            <p class="text-white text-3xl">Take the best path forward</p>
+        </div>
+        <div
+            class="grid gap-[50px]  grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[60px]">
+            <div class="max-w-[210px] ">
+                <img src="./images/icon1.png" class="w-[40px]" alt="">
+                <p class="text-white mt-4 text-lg font-medium">Start an online business
+                </p>
+                <p class="text-white mt-4">Create a business, whether you’ve got a fresh idea or are looking for a new
+                    way to make money.</p>
+            </div>
+            <div class="max-w-[210px] ">
+                <img src="./images/icon2.png" class="w-[40px]" alt="">
+                <p class="text-white mt-4 text-lg font-medium">Move your business onlinev
+                </p>
+                <p class="text-white mt-4">Turn your retail store into an online store and keep serving customers
+                    without missing a beat.</p>
+            </div>
+            <div class="max-w-[210px] ">
+                <img src="./images/icon3.png" class="w-[40px]" alt="">
+                <p class="text-white mt-4 text-lg font-medium">Switch to Shopify
+
+                </p>
+                <p class="text-white mt-4">Bring your business to Shopify, no matter which ecommerce platform you’re
+                    currently using.</p>
+            </div>
+            <div class="max-w-[210px] ">
+                <img src="./images/icon4.png" class="w-[40px]" alt="">
+                <p class="text-white mt-4 text-lg font-medium">Hire a Shopify expert
+                </p>
+                <p class="text-white mt-4">Get set up with the help of a trusted freelancer or agency from the Shopify
+                    Experts Marketplace.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------------------ feature section-----------------  -->
+    <section>
+        <p class="px-[5%] text-3xl text-center lg:text-4xl mt-[100px]">With you wherever you’re going</p>
+        <p class=" px-[5%] text-gray-500 mt-4 w-full flex items-center text-xl ">
+            <span class="mx-auto max-w-[700px] text-center">One platform with all the ecommerce and point of sale
+                features you need to start, run, and grow your business.</span>
+        </p>
+
+        <div class="mt-11 flex flex-col-2  flex-wrap md:flex-nowrap   justify-center md:pl-[100px]">
+            <div class="lg:max-w-[400px] relative">
+                <video id="video1" class="lg:drop-shadow-xl " src="./images/video1.webm" autoplay="true" loop
+                    muted></video>
+                <ion-icon name="pause-outline" id="play"
+                    class="text-darkgreen font-semibold text-2xl cursor-pointer absolute bottom-4 left-[90%] lg:right-[-10%]">
+                </ion-icon>
+            </div>
+            <div class="lg:w-[967px] md:pl-[90px] mt-7 px-[5%]">
+                <p class="text-3xl">Sell everywhere
+                </p>
+                <p class="text-md font-normal text-gray-500 max-w-[410px] mt-6">Use one platform to sell products to
+                    anyone, anywhere—in person with Point of Sale and online through your website, social media, and
+                    online marketplaces.</p>
+                <button
+                    class="flex items-center justify-between text-xl font-medium mt-6 text-[#008060] justify-between"><span>Explore
+                        ways to sell</span>
+                    <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                </button>
+
+            </div>
+        </div>
+
+
+
+        <div class="flex flex-wrap-reverse md:flex-nowrap items-center justify-between mt-11">
+            <div class="lg:w-[570px] md:pl-[90px] mx-auto mt-7 px-[5%]">
+                <p class="text-3xl">Market your business</p>
+                <p class="text-md font-normal text-gray-500">Take the guesswork out of marketing with built-in tools
+                    that help you create, execute, and analyze digital marketing campaigns.</p>
+                <button
+                    class="flex items-center justify-between text-xl font-medium mt-6 text-[#008060] justify-between"><span>Explore
+                        ways to sell</span>
+                    <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
+            <img src="./images/6.webp" class="md:max-w-[400px]" alt="">
+        </div>
+
+        <div class="flex flex-wrap md:flex-nowrap items-center justify-between mt-11">
+            <img src="./images/dashboard.png" class="md:max-w-[400px]" alt="">
+            <div class="lg:w-[570px] md:pl-[90px] mx-auto mt-7 px-[5%]">
+                <p class="text-3xl">Market your business</p>
+                <p class="text-md font-normal text-gray-500">Take the guesswork out of marketing with built-in tools
+                    that help you create, execute, and analyze digital marketing campaigns.</p>
+                <button
+                    class="flex items-center justify-between text-xl font-medium mt-6 text-[#008060] justify-between"><span>Explore
+                        ways to sell</span>
+                    <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-------------------- Explore more section -------------------->
+    <section class="bg-[#f3fcf4] py-[70px] px-[5%] mt-[100px]">
+        <p class="text-2xl md:text-3xl text-[#212326]">Explore more from Shopify in India</p>
+
+        <div
+            class="bg-white flex flex-wrap-reverse items-center justify-center lg:justify-between lg:flex-nowrap md:flex-col-2 mt-11">
+            <div
+                class="mt-5 md:mt-0 md:px-[20px] md:py-[55px] md:px-[30px] bg-white max-w-[600px] lg:min-w-[500px] flex flex-col  justify-between gap-6">
+                <p class="text-sm md:text-md font-bold uppercase">start</p>
+                <p class="text-xl md:text-2xl max-w-[540px]">Launch your store with the help of a Shopify Expert
+                </p>
+                <p>Find hundreds of experts from India ready to help you get your store up and running, from choosing a
+                    theme to building a fully customized site.
+
+                </p>
+                <button class="flex text-xl font-medium mt-6 text-[#008060] items-center"><span>Explore
+                        ways to sell</span>
+                    <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
+            <img src="./images/7.webp" class="sm:max-w-[600px]" alt="">
+        </div>
+    </section>
+
+
+    <section class="px-[5%] md:px-[15%] mt-11">
+        <p class="max-w-[400px] text-2xl">Empowering independent business owners everywhere</p>
+        <p class="max-w-[570px] text-xl mt-8">Millions of businesses in <span class="font-bold">175 countries</span>
+            around the world have made over <span class="font-bold">$496 billion </span> in sales using Shopify.</p>
+        <button class="flex items-center justify-between text-xl font-medium mt-6 text-[#008060] justify-between"><span>More
+                learn about shopify</span>
+            <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+        </button>
+
+        <video class="mt-10" id="earthVideo" src="./images/earth.mp4" autoplay="true" loop muted></video>
+        <ion-icon id="earthPlay" class="ml-1 text-2xl md:text-4xl text-darkgreen" name="pause-outline"></ion-icon>
+    </section>
+
+    <!-- -----------------single card with image section ----------->
+    <section class="mt-[100px] px-[5%] md:px-[15%] flex flex-col-2 flex-wrap lg:flex-nowrap">
+        <img class="lg:max-w-[450px]" src="./images/smily-girl.jpg" alt="">
+        <div class="bg-[#002e25] md:max-w-[600px] py-11 flex flex-col justify-center items-center px-[7%]">
+            <p class="text-white font-medium text-justify text-center  md:text-xl lg:text-2xl">“Shopify was my knight in
+                shining armor when I exhausted every other possibility of getting my online store up and running. It was
+                stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”</p>
+
+            <img class="mt-11" src="./images/fancy-style.png" alt="">
+            <p class="text-md font-medium mt-8 text-white">Alicia | Alicia Souza</p>
+        </div>
+    </section>
+
+    <!---------------- partner company section -------------->
+    <section class="flex w-full flex-wrap px-[5%] md:px-[15%] gap-6 mt-[100px]  items-center justify-center">
+        <img src="./images/c1.png" alt="">
+        <img src="./images/c2.png" alt="">
+        <img src="./images/c3.png" alt="">
+        <img src="./images/c4.webp" alt="">
+        <img src="./images/c5.webp" alt="">
+        <img src="./images/c6.png" alt="">
+        <img src="./images/c7.png" alt="">
+    </section>
+
+
+    <!-- -------------support section -------------- -->
+
+    <section
+        class="mt[100px] px-[5%] flex-col-2 bg-skin mt-[50px] flex flex-wrap md:flex-nowrap md:flex-col-2 justify-between ">
+        <div class="px-4 lg:px-11 py-11 ">
+            <p class="max-w-[370px] text-3xl">Get the help you need, every step of the way</p>
+
+            <div class="flex flex-col-2 flex-wrap lg:flex-nowrap  gap-6 mt-11">
+
+
+                <div>
+                    <p class="text-md font-medium">Shopify support</p>
+                    <p class="text-sm mt-2 font-normal max-w-[300px]">Contact support 24/7, whether you’re
+                        troubleshooting issues or looking for business advice.</p>
+                    <button
+                        class="flex items-center justify-between text-sm font-medium mt-2 text-[#008060] justify-between"><span>Contact
+                            support</span>
+                        <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <div>
+                    <p class="text-md font-medium">Shopify App Store</p>
+                    <p class="text-sm mt-2 font-normal max-w-[300px]">Add features and functionality to your business
+                        with 6,000+ apps that integrate directly with Shopify.</p>
+                    <button
+                        class="flex items-center justify-between text-sm font-medium mt-2 text-[#008060] justify-between"><span>Visit
+                            the Shopify App Store
+                        </span>
+                        <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+                <div>
+                    <p class="text-md font-medium">Shopify Experts Marketplace
+                    </p>
+                    <p class="text-sm mt-2 font-normal max-w-[300px]">Hire a Shopify expert to help you with everything
+                        from store setup to SEO.</p>
+                    <button
+                        class="flex items-center justify-between text-sm font-medium mt-2 text-[#008060] justify-between"><span>Explore
+                            the Shopify Experts Marketplace
+                        </span>
+                        <ion-icon class="ml-1 text-xl" name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <img src="./images/hard-working-man.webp" class="md:max-w-[400px] lg:max-w-[450px]" alt="">
+    </section>
+
+
+    <!-- --------------- start journey secition--------------- -->
+
+    <section class="mt-[80px] px-[5%] flex items-center flex-col md:px-[15%]">
+        <p class="text-center text-xl font-medium md:text-2xl">Start your business journey with Shopify</p>
+
+        <p class="text-gray-500 max-w-[640px] text-center mt-4">Try Shopify for free, and explore all the tools and
+            services you need to start, run, and grow your business.</p>
+
+        <button class="bg-[#008060] mt-5 text-white py-[8px] font-medium px-[20px] rounded-sm shadow-xl"
+            style="white-space: nowrap;">Start free triel</button>
+
+    </section>
+    <div class="w-full relative mt-5">
+        <a href="#top"
+            class="mt-5 absolute  right-[5%]  text-[#008060] py-[8px] flex items-center font-medium px-[20px] rounded-sm shadow-xl"
+            style="white-space: nowrap;"><span>Back to top</span>
+            <ion-icon class="ml-2" name="arrow-up-outline"></ion-icon>
+        </a>
+    </div>
+
+
+    <!-- ----------------footer section-------------------- -->
+    <footer class="p-6 bg-[#002e25]  mt-[100px]">
+       <div class="border-b border-gray-600">
+        <ul class="flex flex-wrap">
+            <a href="#" class="text-white px-3 py-3 md:py-8 font-medium  hover:border-b-[2px]"><li>About</li></a>
+            <a href="#" class="text-white px-3 py-3 md:py-8 font-medium  hover:border-b-[2px]"><li>Careers</li></a>
+            <a href="#" class="text-white px-3 py-3 md:py-8 font-medium  hover:border-b-[2px]"><li>Press and Media</li></a>
+            <a href="#" class="text-white px-3 py-3 md:py-8 font-medium  hover:border-b-[2px]"><li>Shopify Plus</li></a>
+            <a href="#" class="text-white px-3 py-3 md:py-8 font-medium  hover:border-b-[2px]"><li>Sitemap</li></a>
+        </ul>
+       </div>
+        <div class="container grid grid-cols-1 mx-auto gap-x-3 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-[40px]">
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium text-white">Getting started</h2>
+                <div class="flex flex-col space-y-2 text-sm dark:text-gray-400">
+                    <a rel="noopener noreferrer" href="#">Installation</a>
+                    <a rel="noopener noreferrer" href="#">Release Notes</a>
+                    <a rel="noopener noreferrer" href="#">Upgrade Guide</a>
+                    <a rel="noopener noreferrer" href="#">Using with Preprocessors</a>
+                    <a rel="noopener noreferrer" href="#">Optimizing for Production</a>
+                    <a rel="noopener noreferrer" href="#">Browser Support</a>
+                    <a rel="noopener noreferrer" href="#">IntelliSense</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium text-white">Core Concepts</h2>
+                <div class="flex flex-col space-y-2 text-sm dark:text-gray-400">
+                    <a rel="noopener noreferrer" href="#">Utility-First</a>
+                    <a rel="noopener noreferrer" href="#">Responsive Design</a>
+                    <a rel="noopener noreferrer" href="#">Hover, Focus, &amp; Other States</a>
+                    <a rel="noopener noreferrer" href="#">Dark Mode</a>
+                    <a rel="noopener noreferrer" href="#">Adding Base Styles</a>
+                    <a rel="noopener noreferrer" href="#">Extracting Components</a>
+                    <a rel="noopener noreferrer" href="#">Adding New Utilities</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium text-white">Customization</h2>
+                <div class="flex flex-col space-y-2 text-sm dark:text-gray-400">
+                    <a rel="noopener noreferrer" href="#">Configuration</a>
+                    <a rel="noopener noreferrer" href="#">Theme Configuration</a>
+                    <a rel="noopener noreferrer" href="#">Breakpoints</a>
+                    <a rel="noopener noreferrer" href="#">Customizing Colors</a>
+                    <a rel="noopener noreferrer" href="#">Customizing Spacing</a>
+                    <a rel="noopener noreferrer" href="#">Configuring Variants</a>
+                    <a rel="noopener noreferrer" href="#">Plugins</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium text-white">Customization</h2>
+                <div class="flex flex-col space-y-2 text-sm dark:text-gray-400">
+                    <a rel="noopener noreferrer" href="#">Configuration</a>
+                    <a rel="noopener noreferrer" href="#">Theme Configuration</a>
+                    <a rel="noopener noreferrer" href="#">Breakpoints</a>
+                    <a rel="noopener noreferrer" href="#">Customizing Colors</a>
+                    <a rel="noopener noreferrer" href="#">Customizing Spacing</a>
+                    <a rel="noopener noreferrer" href="#">Configuring Variants</a>
+                    <a rel="noopener noreferrer" href="#">Plugins</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium text-white">Community</h2>
+                <div class="flex flex-col space-y-2 text-sm dark:text-gray-400">
+                    <a rel="noopener noreferrer" href="#">GitHub</a>
+                    <a rel="noopener noreferrer" href="#">Discord</a>
+                    <a rel="noopener noreferrer" href="#">Twitter</a>
+                    <a rel="noopener noreferrer" href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-600 flex flex-wrap items-center justify-between gap-6 mt-[50px]">
+            <ul class="flex flex-wrap">
+                <a href="#" class="text-white text-xl px-4 py-4"><li><ion-icon name="logo-facebook"></ion-icon></li></a>
+                <a href="#" class="text-white text-xl px-4 py-4"><li><ion-icon name="logo-twitter"></ion-icon></li></a>
+                <a href="#" class="text-white text-xl px-4 py-4"><li><ion-icon name="logo-instagram"></ion-icon></li></a>
+                <a href="#" class="text-white text-xl px-4 py-4"><li><ion-icon name="logo-youtube"></ion-icon></li></a>
+                <a href="#" class="text-white text-xl px-4 py-4"><li><ion-icon name="logo-linkedin"></ion-icon></li></a>
+                <a href="#" class="text-white text-xl px-4 py-4"><li><ion-icon name="logo-pinterest"></ion-icon></li></a>
+            </ul>
+            <ul class="flex flex-wrap gap-6 ">
+                <a href="#"><li class="text-white px-4">Terms of services</li></a>
+                <a href="#"><li class="text-white px-4">Privacy Policy</li></a>
+                <li class="text-white px-4 flex flex-nowrap items-center">
+                    <ion-icon name="earth-outline" class="mx-2"></ion-icon><select name="country" id="" class="bg-[transparent] border-0 active:border-0 p-0 outline-none">
+                        <option value="india" class="bg-darkgreen rounded-none" selected> India</option>
+                        <option value="Russia" class="bg-darkgreen">Russia</option>
+                        <option value="America" class="bg-darkgreen">America</option>
+                        <option value="UK" class="bg-darkgreen">UK</option>
+                        <option value="China" class="bg-darkgreen">China</option>
+                        <option value="Ukrain" class="bg-darkgreen">Ukrain</option>
+                        <option value="Bangladesh" class="bg-darkgreen">Bangladesh</option>
+                        <option value="Japan" class="bg-darkgreen">Japan</option>
+                    </select>
+                </li>
+            </ul>
+           </div>
+    </footer>
+
+    <!-- flowbit script -->
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+
+    <!-- ion icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- general script -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
